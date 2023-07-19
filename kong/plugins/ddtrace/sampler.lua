@@ -7,7 +7,7 @@ and a rate-based sampler using rates provided by the Datadog agent.
 ]]
 
 local cjson = require "cjson.safe"
-cjson.decode_array_with_array_mt = true
+cjson.decode_array_with_array_mt(true)
 local ffi = require "ffi"
 local uint64_t = ffi.typeof("uint64_t")
 
